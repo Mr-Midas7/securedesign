@@ -93,7 +93,7 @@ class SecurityLayer {
     }
 }
 
-public class App {
+public class Activity {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
@@ -106,19 +106,17 @@ public class App {
         SecurityLayer security = new SecurityLayer(users);
         PermissionManager perms = new PermissionManager();
 
-        System.out.println("Welcome!");
-        System.out.println("Ready users:");
-        System.out.println("admin1 / adminpass");
-        System.out.println("teacher1 / teachpass\n");
+        System.out.println("SYSTEM ONLINE!");
+        
 
         while (true) {
             // Pick role first
-            System.out.println("\nPick your role:");
+            System.out.println("\nChoose your role:");
             System.out.println("1. Student");
             System.out.println("2. Teacher");
             System.out.println("3. Admin");
             System.out.println("4. Exit");
-            System.out.print("Choice: ");
+            System.out.print("choice: ");
             String r = in.nextLine();
 
             String role;
